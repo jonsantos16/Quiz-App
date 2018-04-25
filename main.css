@@ -1,0 +1,217 @@
+
+* {
+    font-family: 'Open Sans Condensed';
+    font-style: bold;
+}
+
+header {
+    text-align: center;
+    vertical-align: middle;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+header ul {
+    font-size: 25px;
+}
+
+header li {
+    display: inline;
+    padding-left: 15px;
+}
+
+header img {
+    max-height: 100px;
+    max-width: auto;
+}
+
+html {
+    background: url("https://i.pinimg.com/originals/5c/43/fa/5c43faa705ade99537573d45f115329e.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 30px;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+}
+
+h2 {
+    line-height: 1.15;
+}
+
+button {
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    background-color: #ff6666;
+    border: none;
+    padding: 14px 40px;
+}
+
+button:hover {
+    background-color: #e60000;
+    font-weight: bold;
+}
+
+.response img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: auto;
+}
+
+section {
+    margin-top: 15px;
+    background-color: rgb(153, 204, 255, 0.45);
+    padding: 25px 25px;
+}
+
+fieldset {
+    border: none;
+}
+
+/* The following changes the radio inputs */
+.option {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    user-select: none;
+    background-color: rgb(153, 204, 255, 0.75);
+}
+
+.option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 10px;
+    left: 5px; 
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding-left: 15px;
+    
+}
+
+.option:hover input ~ .checkmark {
+    background-color: #99ccff;
+}
+
+.option:hover {
+    background-color: #cce6ff;
+}
+
+.option input:checked ~ .checkmark {
+    background-color: #0059b3;
+}
+
+.option input:checked {
+    font-weight: bold;
+    background-color: #0066cc;
+}
+
+.option input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.option .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+input[type=submit] {
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    background-color: #ff6666;
+    border: none;
+    padding: 14px 40px;
+    width: 50%;
+}
+
+input[type=submit]:hover {
+    background-color: #e60000;
+    font-weight: bold;
+}
+
+/* For smaller screens */
+
+@media only screen and (max-width: 640px) {
+    body {
+        font-size: 24px;
+    }
+
+    .checkmark {
+        height: 16px;
+        width: 16px;
+    }
+
+    .stats {
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    body {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 20px 20px;
+    }
+
+    .checkmark {
+        top: 4px;
+    }
+
+    input[type=submit] {
+        font-size: 15px;
+        width: 60%;
+        padding: 3px 10px;
+    }
+
+    section {
+        padding: 12px 12px;
+        margin-top: 0px;
+    }
+
+    .stats {
+        height: 70px;
+    }
+}
+
+/* For wider screens */
+@media only screen and (min-width: 640px) {
+    header ul {
+        text-align: right;
+    };
+
+    img {
+        display: inline-block;
+        float: left;
+    };
+}
