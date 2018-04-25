@@ -20,7 +20,7 @@ function nextQuestion() {
         $(this).closest("div").remove();
         $("section").html(
             `<div class=question>
-                <h2>${STORE[questionNumber].Question}</h2>
+                <h1>${STORE[questionNumber].Question}</h1>
                 <form class="multiple-choice" id="form">
                     <fieldset name="answer set">
                         <ul>
